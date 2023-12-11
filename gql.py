@@ -25,7 +25,7 @@ class GraphqlLexer(RegexLexer):
 
     tokens = {
         'root': [
-            (r'#.*', Comment.Singline),
+            #(r'#.*', Comment.Singline),
             (r'\.{3}\w+', Operator),
             (r'"[\u0009\u000A\u000D\u0020-\uFFFF]*"', String.Double),
             (r'(-?0|-?[1-9][0-9]*)(\.[0-9]+[eE][+-]?[0-9]+|\.[0-9]+|[eE][+-]?[0-9]+)', Number.Float),
